@@ -1,0 +1,27 @@
+{
+  "name": "coffeelib.templates",
+  "description": "Built-in templates for coffeelib",
+  "version": "0.0.0",
+  "author": "Anatoly Chernov <chertoly@gmail.com>",
+  "license": "0BSD",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ch1c0t/coffeelib.templates"
+  },
+  "keywords": [
+    "coffeescript",
+    "isomorphic"
+  ],
+  "scripts": {
+    "build": "coffee scripts/compile.coffee",
+    "start": "coffee scripts/watch.coffee",
+    "test": "coffee scripts/run_specs.coffee"
+  },
+  "devDependencies": {
+    "@ch1c0t/ext": "^0.4.0",
+    "chokidar": "^5.0.0",
+    "coffeescript": "^2.7.0",
+    "glob": "^13.0.6",
+    "jasmine": "^6.2.0"
+  }
+}
