@@ -1,7 +1,7 @@
 global.DescribeTemplate = (template_name, addendum) ->
   describe template_name, ->
     beforeAll ->
-      @instance_name = "#{template_name}_instance"
+      @instance_name = "#{template_name}_pro"
       @instance_path = "#{ENV.tmp}/#{@instance_name}"
 
       @template_path = "#{process.cwd()}/src/#{template_name}"
