@@ -1,7 +1,4 @@
-describe 'new cli', ->
-  beforeAll ->
-    @name = "cli_package"
-    @response = await RunCLI "new #{@name} cli"
-
+{ basename } = require 'path'
+template_name = (basename __filename).split('.')[0]
+DescribeTemplate template_name, ->
   ItCreatesPackageWithCLI()
-  ItCreatesGitRepository()

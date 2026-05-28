@@ -1,7 +1,4 @@
-describe 'new rpc', ->
-  beforeAll ->
-    @name = "rpc_package"
-    @response = await RunCLI "new #{@name} rpc"
-
+{ basename } = require 'path'
+template_name = (basename __filename).split('.')[0]
+DescribeTemplate template_name, ->
   ItCreatesPackageWithCLI()
-  ItCreatesGitRepository()

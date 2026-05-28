@@ -1,7 +1,6 @@
 global.ItCreatesPackageWithCLI = ->
   beforeAll ->
-    @packageDir = "#{ENV.tmp}/#{@name}"
-    @cli = "#{@packageDir}/bin/#{@name}"
+    @cli = "#{@instance_path}/bin/#{@instance_name}"
 
   it 'succeeds', ->
     expect(@response.error).toBe null
@@ -23,7 +22,7 @@ global.ItCreatesPackageWithCLI = ->
     expect(response.stdout.trim()).toBe '0.0.0'
 
   it 'has specs that pass', ->
-    response = await sh 'npm test', cwd: @packageDir
+    response = await sh 'npm test', cwd: @instance_path
     expect(response.error)
       .withContext response.stdout
       .toBe null
