@@ -1,7 +1,7 @@
 {
   "name": "coffeelib.templates",
   "description": "Built-in templates for coffeelib",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": "Anatoly Chernov <chertoly@gmail.com>",
   "license": "0BSD",
   "repository": {
