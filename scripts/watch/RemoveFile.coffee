@@ -1,5 +1,4 @@
-{ bow } = require '@ch1c0t/bow'
-{ sh } = require '@ch1c0t/sh'
+require '@ch1c0t/ext'
 
 SourceFile = bow
   init: ({ path }) ->
