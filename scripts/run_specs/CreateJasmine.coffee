@@ -15,7 +15,7 @@ config =
 
 if TEMPLATE?
   config.spec_files = [
-    "**/#{TEMPLATE.name}.spec.coffee"
+    'one.spec.coffee'
   ]
 
 exports.CreateJasmine = ->
