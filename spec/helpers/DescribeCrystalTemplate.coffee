@@ -8,11 +8,10 @@ global.DescribeCrystalTemplate = (template_name, addendum) ->
       response = await RunCLI "new #{@project_name} #{@template_path}"
       expect(response.error).toBe null
 
-      response = await BundleInstallIn "#{ENV.tmp}/#{@project_name}"
-      expect(response.error).toBe null
-
-      response = await RakeIn "#{ENV.tmp}/#{@project_name}"
-      expect(response.error).toBe null
+      await RunIn @project_path, [
+        'bundle install'
+        'bundle exec rake'
+      ]
       
     describe 'project', ->
       it 'has .git/ directory', ->
