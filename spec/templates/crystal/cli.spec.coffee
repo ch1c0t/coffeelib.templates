@@ -1,4 +1,4 @@
-DescribeCrystalTemplate 'crystal-cli', ->
+DescribeCrystalTemplate 'crystal/cli', ->
   it 'creates a project that can build a CLI binary', ->
     response = await sh 'bundle exec rake',
       cwd: @project_path

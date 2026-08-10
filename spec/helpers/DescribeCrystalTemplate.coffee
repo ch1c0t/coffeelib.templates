@@ -1,7 +1,8 @@
 global.DescribeCrystalTemplate = (template_name, addendum) ->
   describe template_name, ->
     beforeAll ->
-      @project_name = "#{template_name}_project"
+      last_name = template_name.split('/').at(-1)
+      @project_name = "crystal.#{last_name}_project"
       @project_path = "#{ENV.tmp}/#{@project_name}"
 
       @template_path = "#{process.cwd()}/src/#{template_name}"
