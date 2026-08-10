@@ -11,8 +11,6 @@ npm install coffeelib -g
 
 ## Development
 
-`npm start` to start a development session.
-
 `npm test` to run the tests of all templates.
 
 `./test.coffee TEMPLATE_NAME` to run only the tests of one template. For example:

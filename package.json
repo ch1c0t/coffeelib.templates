@@ -13,8 +13,6 @@
     "isomorphic"
   ],
   "scripts": {
-    "build": "coffee scripts/compile.coffee",
-    "start": "coffee scripts/watch.coffee",
     "test": "coffee scripts/run_specs.coffee"
   },
   "devDependencies": {
