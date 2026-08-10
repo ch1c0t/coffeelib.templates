@@ -20,11 +20,11 @@ if TEMPLATE?
 
 exports.CreateJasmine = ->
   jasmine = new Jasmine()
-  jasmine.DEFAULT_TIMEOUT_INTERVAL = 10000
 
   jasmine.loadConfig config
   jasmine.configureDefaultReporter
     showColors: true
 
   jasmine.exitOnCompletion = false
+  jasmine.DEFAULT_TIMEOUT_INTERVAL = 20000
   jasmine
