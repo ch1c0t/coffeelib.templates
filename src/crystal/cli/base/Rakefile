@@ -1,4 +1,3 @@
-"""
 task :bgem do
   sh 'bundle exec bgem'
 end
@@ -8,4 +7,3 @@ task :build do
 end
 
 task :default => [:bgem, :build]
-"""
