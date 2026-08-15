@@ -1,12 +1,9 @@
 """
-{ VERSION, compile } = require 'coffeescript'
+Version = require './functions/Version'
+Compile = require './functions/Compile'
 
-exports.functions =
-  Version: -> VERSION
-  Compile: f
-    in:
-      code: String
-      bare: Boolean
-    out: ->
-      compile @code, @props
+exports.functions = {
+  Version
+  Compile
+}
 """
