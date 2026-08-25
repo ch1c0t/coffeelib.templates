@@ -1,6 +1,7 @@
 filename = '.gitignore'
 text = """
-bin
+/bin/
+/lib/
 """
 
 {
