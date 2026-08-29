@@ -16,6 +16,6 @@ spec =
     start: "coffeelib watch"
     test: "coffeelib test"
   devDependencies:
-    coffeelib: coffeelib.version_or_path
+    coffeelib: "github:ch1c0t/coffeelib"
 
 jsonify spec

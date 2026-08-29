@@ -18,7 +18,7 @@ spec =
   dependencies:
     "hobby-rpc.server": "^0.1.2"
   devDependencies:
-    coffeelib: coffeelib.version_or_path
+    coffeelib: "github:ch1c0t/coffeelib"
     "hobby-rpc.client": "^0.0.2"
     "hobby-rpc": "^0.2.1"
 
