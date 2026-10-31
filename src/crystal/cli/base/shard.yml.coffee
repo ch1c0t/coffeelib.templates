@@ -7,5 +7,5 @@ authors:
 targets:
   #{project.name}:
     main: src/bin/#{project.name}.cr
-crystal: ">= 1.15.1"
+crystal: ">= 1.20.3"
 """

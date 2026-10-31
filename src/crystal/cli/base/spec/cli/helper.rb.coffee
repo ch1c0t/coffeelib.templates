@@ -4,7 +4,7 @@ require 'open3'
 def cli string = ''
   binary = "./bin/#{project.name}"
   command = "\#{binary} \#{string}"
-  
+
   stdout, stderr, status = Open3.capture3 command
   exit_code = status.exitstatus
 
