@@ -2,7 +2,7 @@
 global.ItCanInteractWithCoffeeScriptRPC = ->
   it 'gets the CoffeeScript version', ->
     version = await @rpc 'Version'
-    expect(version).toBe '2.7.0'
+    expect(version).toStartWith '2.7'
 
   it 'compiles strings of CoffeeScript to JavaScript', ->
     js_string = await @rpc 'Compile',

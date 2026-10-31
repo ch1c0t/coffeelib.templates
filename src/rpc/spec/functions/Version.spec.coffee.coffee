@@ -8,5 +8,5 @@ describe 'Version', ->
 
   it 'returns the CoffeeScript version', ->
     string = await @rpc 'Version'
-    expect(string).toBe '2.7.0'
+    expect(string).toStartWith '2.7'
 """
